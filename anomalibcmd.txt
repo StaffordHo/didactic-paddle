@@ -1,0 +1,792 @@
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\_aiVision\20_Anomalib>py -V
+Python 3.13.7
+
+C:\_aiVision\20_Anomalib>py -3.13.7 -m venv .venv
+No suitable Python runtime found
+Pass --list (-0) to see all detected environments on your machine
+or set environment variable PYLAUNCHER_ALLOW_INSTALL to use winget
+or open the Microsoft Store to the requested version.
+
+C:\_aiVision\20_Anomalib>py -3.13 -m venv .venv
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\Activate.ps1
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -V
+Python 3.13.7
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -m ensurepip --upgrade
+Looking in links: c:\Users\FH\AppData\Local\Temp\tmpadrizn9m
+Requirement already satisfied: pip in c:\_aivision\20_anomalib\.venv\lib\site-packages (25.2)
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -m pip install -U pip wheel setuptools uv
+Requirement already satisfied: pip in c:\_aivision\20_anomalib\.venv\lib\site-packages (25.2)
+Collecting wheel
+  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting setuptools
+  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting uv
+  Downloading uv-0.8.17-py3-none-win_amd64.whl.metadata (12 kB)
+Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+Downloading uv-0.8.17-py3-none-win_amd64.whl (21.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 12.9 MB/s  0:00:01
+Installing collected packages: wheel, uv, setuptools
+Successfully installed setuptools-80.9.0 uv-0.8.17 wheel-0.45.1
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\pip.exe -V
+pip 25.2 from C:\_aiVision\20_Anomalib\.venv\Lib\site-packages\pip (python 3.13)
+                         .\.venv\Scripts\python.exe -m pip install -no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu128
+
+Usage:
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] <requirement specifier> [package-index-options] ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] -r <requirements file> [package-index-options] ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] [-e] <vcs project url> ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] [-e] <local project path> ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] <archive url/path> ...
+
+no such option: -n
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -m pip install -no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu128
+
+Usage:
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] <requirement specifier> [package-index-options] ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] -r <requirements file> [package-index-options] ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] [-e] <vcs project url> ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] [-e] <local project path> ...
+  C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install [options] <archive url/path> ...
+
+no such option: -n
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -m pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu128
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Collecting torch
+  Downloading https://download.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp313-cp313-win_amd64.whl.metadata (29 kB)
+Collecting torchvision
+  Downloading https://download.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp313-cp313-win_amd64.whl.metadata (6.3kB)
+Collecting filelock (from torch)
+  Downloading https://download.pytorch.org/whl/filelock-3.13.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting typing-extensions>=4.10.0 (from torch)
+  Downloading https://download.pytorch.org/whl/typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting sympy>=1.13.3 (from torch)
+  Downloading https://download.pytorch.org/whl/sympy-1.13.3-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch)
+  Downloading https://download.pytorch.org/whl/networkx-3.3-py3-none-any.whl.metadata (5.1 kB)
+Collecting jinja2 (from torch)
+  Downloading https://download.pytorch.org/whl/Jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting fsspec (from torch)
+  Downloading https://download.pytorch.org/whl/fsspec-2024.6.1-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: setuptools in c:\_aivision\20_anomalib\.venv\lib\site-packages (from torch) (80.9.0)
+Collecting numpy (from torchvision)
+  Downloading https://download.pytorch.org/whl/numpy-2.1.2-cp313-cp313-win_amd64.whl.metadata (59 kB)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Downloading https://download.pytorch.org/whl/pillow-11.0.0-cp313-cp313-win_amd64.whl.metadata (9.3 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+  Downloading https://download.pytorch.org/whl/mpmath-1.3.0-py3-none-any.whl (536 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 1.7 MB/s  0:00:00
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Downloading https://download.pytorch.org/whl/MarkupSafe-2.1.5.tar.gz (19 kB)
+  Preparing metadata (setup.py) ... done
+Downloading https://download.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp313-cp313-win_amd64.whl (3461.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 GB 23.5 MB/s  0:02:33
+Downloading https://download.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp313-cp313-win_amd64.whl (7.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.5/7.5 MB 18.1 MB/s  0:00:00
+Downloading https://download.pytorch.org/whl/pillow-11.0.0-cp313-cp313-win_amd64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 9.3 MB/s  0:00:00
+Downloading https://download.pytorch.org/whl/sympy-1.13.3-py3-none-any.whl (6.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 15.0 MB/s  0:00:00
+Downloading https://download.pytorch.org/whl/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading https://download.pytorch.org/whl/filelock-3.13.1-py3-none-any.whl (11 kB)
+Downloading https://download.pytorch.org/whl/fsspec-2024.6.1-py3-none-any.whl (177 kB)
+Downloading https://download.pytorch.org/whl/Jinja2-3.1.4-py3-none-any.whl (133 kB)
+Downloading https://download.pytorch.org/whl/networkx-3.3-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 6.4 MB/s  0:00:00
+Downloading https://download.pytorch.org/whl/numpy-2.1.2-cp313-cp313-win_amd64.whl (12.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.6/12.6 MB 19.1 MB/s  0:00:00
+Building wheels for collected packages: MarkupSafe
+  DEPRECATION: Building 'MarkupSafe' using the legacy setup.py bdist_wheel mechanism, which will be removed in a futureversion. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interfaceby setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'MarkupSafe'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for MarkupSafe (setup.py) ... done
+  Created wheel for MarkupSafe: filename=markupsafe-2.1.5-py3-none-any.whl size=9943 sha256=8ac3013b5a4f780cb30189f350bfff5070771d41acab949a4894475b22b48af0
+  Stored in directory: C:\Users\FH\AppData\Local\Temp\pip-ephem-wheel-cache-i3ah0qjr\wheels\84\b6\28\95b8e298901ee19b488797095efb5fbed28637ed83215b13b1
+Successfully built MarkupSafe
+Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, networkx, MarkupSafe, fsspec, filelock,jinja2, torch, torchvision
+Successfully installed MarkupSafe-2.1.5 filelock-3.13.1 fsspec-2024.6.1 jinja2-3.1.4 mpmath-1.3.0 networkx-3.3 numpy-2.1.2 pillow-11.0.0 sympy-1.13.3 torch-2.8.0+cu128 torchvision-0.23.0+cu128 typing-extensions-4.12.2
+
+C:\_aiVision\20_Anomalib>nvidia-smt
+'nvidia-smt' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\_aiVision\20_Anomalib>nvidia-smi
+Wed Sep 17 15:05:26 2025
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 581.15                 Driver Version: 581.15         CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5090      WDDM  |   00000000:02:00.0  On |                  N/A |
+|  0%   33C    P8             19W /  600W |    1584MiB /  32607MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2240    C+G   ...yb3d8bbwe\Notepad\Notepad.exe      N/A      |
+|    0   N/A  N/A           12020    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           12420    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A           12732    C+G   ...2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A           13148    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A           13728    C+G   ...launcher\AdskAccessUIHost.exe      N/A      |
+|    0   N/A  N/A           13792    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           13816    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A           13888    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           15240    C+G   ....0.3485.66\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           16304    C+G   ....0.3485.66\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           18920    C+G   ...Chrome\Application\chrome.exe      N/A      |
+|    0   N/A  N/A           18944    C+G   ...yb3d8bbwe\WindowsTerminal.exe      N/A      |
+|    0   N/A  N/A           19244    C+G   ...crosoft\OneDrive\OneDrive.exe      N/A      |
+|    0   N/A  N/A           19468    C+G   ...Files\Notepad++\notepad++.exe      N/A      |
+|    0   N/A  N/A           20844      C   ...\Python\Python313\pythonw.exe      N/A      |
+|    0   N/A  N/A           21240    C+G   ...em32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A           21248    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A           22980    C+G   ....0.3485.66\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           23672    C+G   ...8wekyb3d8bbwe\SecHealthUI.exe      N/A      |
+|    0   N/A  N/A           24000    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           24664    C+G   C:\Windows\explorer.exe               N/A      |
++-----------------------------------------------------------------------------------------+
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -c "import torch;print('Torch:'torch.__version__);print('CUDA avail:',torch.cuda.is_available());print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+  File "<string>", line 1
+    import torch;print('Torch:'torch.__version__);print('CUDA avail:',torch.cuda.is_available());print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+C:\_aiVision\20_Anomalib>.\.venv\Scripts\python.exe -c "import torch;print('Torch:',torch.__version__);print('CUDA avail:',torch.cuda.is_available());print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No GPU')"
+Torch: 2.8.0+cu128
+CUDA avail: True
+NVIDIA GeForce RTX 5090
+
+C:\_aiVision\20_Anomalib>C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 1 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 16 ^
+  --data.num_workers 0
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train --model Patchcore --data anomalib.data.MVTecAD --data.category hazelnut --data.root "C:\_aiVision\20_Anomalib\datasets" --trainer.max_epochs 1 --trainer.accelerator gpu --trainer.devices 1 --trainer.precision bf16 --data.num_workers 0
+
+
+dir /s /b ".\results\model.ckpt"
+(to find model checkpoint file)
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe predict --model Patchcore --data anomalib.data.MVTecAD --data.category hazelnut --data.root "C:\_aiVision\20_Anomalib\datasets" --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" --trainer.accelerator gpu --trainer.devices 1 --trainer.precision bf16
+
+Predict with bf16-mixed flag
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe predict --model Patchcore --data anomalib.data.MVTecAD --data.category hazelnut --data.root "C:\_aiVision\20_Anomalib\datasets" --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" --trainer.accelerator gpu --trainer.devices 1 --trainer.precision bf16-mixed
+
+
+Speed tweaks:
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe predict --model Patchcore --data anomalib.data.MVTecAD --data.category hazelnut --data.root "C:\_aiVision\20_Anomalib\datasets" --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" --trainer.accelerator gpu --trainer.devices 1 --trainer.precision bf16-mixed --data.num_workers 8
+
+
+
+Convert to ONNX:
+mkdir ".\exports"
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export --model Patchcore --export_type onnx --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" --export_root ".\exports" --model_file_name "patchcore_hazelnut.onnx"
+
+
+winget install -e --id Python.Python.3.11
+:: then CLOSE this terminal and open a fresh cmd window
+
+cd C:\_aiVision\20_Anomalib
+ren ".\exports\patchcore_hazelnut.onnx.onnx" patchcore_hazelnut.onnx  2>nul
+
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\python.exe -m pip install -U pip
+
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\python.exe -m pip install "openvino-dev>=2024.2" --only-binary=:all:
+
+
+mkdir ".\exports\fh_ir"
+
+change name:
+dir /s /b D:\*.onnx
+ren "D:\patchcore_hazelnut.onnx.onnx" patchcore_hazelnut.onnx
+
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe "D:\patchcore_hazelnut.onnx" ^
+  --compress_to_fp16 True ^
+  --output_model "C:\_aiVision\20_Anomalib\exports\fh_ir\patchcore_hazelnut.xml" ^
+  --input "[1,3,256,256]"
+
+
+
+
+
+
+
+
+
+retrain bf16mixed:
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 1 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision bf16-mixed ^
+  --data.num_workers 0
+
+
+dir /s /b ".\results\model.ckpt"
+:: e.g. .\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt
+
+
+
+redo in single venv:
+cd C:\_aiVision\20_Anomalib
+
+:: 1) remove the old 3.13 venv (after you’re sure you won’t use it)
+rmdir /s /q .venv
+
+:: 2) create a fresh 3.11 venv
+py -3.11 -m venv .venv
+
+:: 3) install GPU PyTorch (CUDA 12.8 build)
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install -U pip
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install torch torchvision torchaudio ^
+  --index-url https://download.pytorch.org/whl/cu128
+
+:: 4) verify CUDA
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -c "import torch;print('CUDA:',torch.cuda.is_available());print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else None)"
+
+:: 5) install anomalib and enable full CLI
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install anomalib
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe install -v
+
+:: 6) (optional) INT8 / IR exports in the same env
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m pip install "openvino-dev>=2024.2" --only-binary=:all:
+
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\pip.exe uninstall -y opencv-python opencv-contrib-python
+C:\_aiVision\20_Anomalib\.venv\Scripts\pip.exe install "opencv-python-headless<4.10"
+
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -c "import cv2, numpy as np, openvino as ov; print('cv2',cv2.__version__,'numpy',np.__version__,'ov',ov.__version__)"
+You should see something like: cv2 4.9.x | numpy 1.26.4 | ov 2024.6.0.
+
+mkdir ".\exports\ov_int8"
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" ^
+  --export_type openvino ^
+  --export_root ".\exports\ov_int8" ^
+  --model_file_name "patchcore_hazelnut_int8" ^
+  --compression_type INT8_PTQ
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\pip.exe install --upgrade "nncf==2.12.*"
+
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export --model Patchcore --export_type onnx --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v3\weights\lightning\model.ckpt" --export_root ".\exports" --model_file_name "patchcore_hazelnutINT8.onnx"
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v2\weights\lightning\model.ckpt" ^
+  --export_type openvino ^
+  --export_root ".\exports\ov_int8" ^
+  --model_file_name "patchcore_hazelnut_int8_ptq" ^
+  --compression_type INT8_PTQ
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train --model Patchcore --data anomalib.data.MVTecAD --data.category hazelnut --data.root "C:\_aiVision\20_Anomalib\datasets" --trainer.max_epochs 1 --trainer.accelerator gpu --trainer.devices 1 --trainer.precision bf16-mixed --data.num_workers 0
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export --model Patchcore --export_type onnx --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v4\weights\lightning\model.ckpt" --export_root ".\exports" --model_file_name "patchcore_hazelnutINT8" --input "[1,3,256,256]"
+
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe "C:\_aiVision\20_Anomalib\exports\weights\onnx\patchcore_hazelnutINT8.onnx" ^
+  --compress_to_fp16 True ^
+  --output_model "C:\_aiVision\20_Anomalib\exports\fh_ir\patchcore_hazelnut.xml" ^
+  --input "[1,3,256,256]"
+
+
+
+dir /s /b ".\exports\*.xml"
+
+
+C:\_aiVision\20_Anomalib\exports\ov_int8\weights\openvino\patchcore_hazelnut_int8.xml
+
+
+
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\python.exe -m openvino.tools.infer_tool ^
+  -m "C:\_aiVision\20_Anomalib\exports\fh_ir\patchcore_hazelnut.xml" ^
+  -i "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\hole\005.png" ^
+  -d CPU
+
+
+C:\_aiVision\20_Anomalib\datasets\hazelnut\test\hole
+
+
+
+
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe "C:\_aiVision\20_Anomalib\exports\weights\onnx\patchcore_hazelnutINT8.onnx" ^
+  --compress_to_fp32 True ^
+  --output_model "C:\_aiVision\20_Anomalib\exports\fh_ir\patchcore_hazelnut.xml" ^
+  --input "[1,3,256,256]"
+
+
+
+
+retrain fp32
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 10 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 32-true ^
+  --data.num_workers 1
+
+
+convert to onnx
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export --model Patchcore --export_type onnx --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v5\weights\lightning\model.ckpt" --export_root ".\exports" --model_file_name "patchcore_hazelnutFP32" 
+
+
+convert onnx to openvino
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe "C:\_aiVision\20_Anomalib\exports\weights\onnx\patchcore_hazelnutFP32.onnx" ^
+  --output_model "C:\_aiVision\20_Anomalib\exports\fh_ir\patchcore_hazelnutFP32.xml" ^
+  --input "[1,3,1024,1024]"
+
+
+
+
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 32 ^
+  --data.num_workers 1
+
+:: export ONNX (make the input static later if needed)
+C:\_aiVision\20_Anomalib\.venv\Scripts\anomalib.exe export --model Patchcore --export_type onnx --ckpt_path ".\results\Patchcore\MVTecAD\hazelnut\v5\weights\lightning\model.ckpt" --export_root ".\exports" --model_file_name "patchcore_hazelnut_1024" 
+
+:: convert ONNX→IR FP16 at 1024
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe ".\exports\weights\onnx\patchcore_hazelnut_1024.onnx" ^
+  --output_model ".\exports\fh_ir\patchcore_hazelnut_1024_fp16.xml" ^
+  --compress_to_fp16 True ^
+  --input "[1,3,1024,1024]"
+
+
+
+removed .venv env and reinstall py3.11
+redo steps rom start
+
+reinstall anomalib wit CLI entrypoint
+.\.venv\Scripts\pip install -U anomalib[full]
+
+
+.\.venv\Scripts\anomalib.exe install
+
+.\.venv\Scripts\python.exe -c "import numpy,torch; print('numpy',numpy.__version__); print('torch',torch.__version__)"
+
+
+
+.\.venv\Scripts\python.exe -c "import sys; print('exe=',sys.executable); print(sys.version); print('\nsite-packages on sys.path:'); import pprint,site; pprint.pp([p for p in sys.path if 'site-packages' in p])"
+.\.venv\Scripts\python.exe -c "import importlib.util; print('numpy spec =', importlib.util.find_spec('numpy'))"
+
+If the second line prints numpy spec = None, Python truly can’t see NumPy.
+
+.\.venv\Scripts\python.exe -m pip install -U --no-cache-dir pip setuptools wheel
+.\.venv\Scripts\python.exe -m pip uninstall -y numpy
+.\.venv\Scripts\python.exe -m pip install --no-cache-dir --only-binary=:all: "numpy==2.1.3"
+
+
+.\.venv\Scripts\python.exe -c "import numpy,torch; print('numpy',numpy.__version__); print('torch',torch.__version__)"
+
+
+
+
+GO IN VENV:
+
+cd \_aiVision\20_Anomalib
+
+.\.venv311\Scripts\activate.bat
+
+python -V
+
+cd C:\_aiVision\20_Anomalib
+.\.venv311\Scripts\activate
+anomalib train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 10 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision bf16-mixed ^
+  --data.num_workers 2
+
+
+set "CKPT=C:\_aiVision\20_Anomalib\results\Patchcore\MVTecAD\hazelnut\v9\weights\lightning\model.ckpt"
+
+
+anomalib export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path "%CKPT%" ^
+  --export_type openvino ^
+  --export_root ".\exports\ov_int8" ^
+  --model_file_name "patchcore_hazelnut_1024_int8" ^
+  --compression_type INT8_PTQ ^
+
+
+".venv311\Scripts\anomalib.exe" export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path "C:\_aiVision\20_Anomalib\results\Patchcore\MVTecAD\hazelnut\v9\weights\lightning\model.ckpt" ^
+  --export_type onnx ^
+  --export_root ".\exports\onnx_default" ^
+  --model_file_name "patchcore_hazelnut_op11" ^
+  --onnx_kwargs.opset_version 11
+
+
+".venv311\Scripts\pip.exe" install --no-cache-dir "openvino-dev>=2024.6,<2026"
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe ".\exports\onnx_default\weights\onnx\patchcore_hazelnut_op11.onnx" ^
+  --output_model ".\exports\fh_ir\patchcore_hazelnut_op11.xml" ^
+  --compress_to_fp16 True ^
+  --input "[1,3,1024,1024]"
+
+FP32:
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe ".\exports\onnx_default\weights\onnx\patchcore_hazelnut_op11.onnx" ^
+  --output_model ".\exports\fh_ir\patchcore_hazelnut_op112.xml" ^
+  --input "[1,3,256,256]"
+
+
+FP32 retrain:
+anomalib train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision bf16 ^
+  --data.num_workers 1
+
+
+".venv311\Scripts\anomalib.exe" export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path "C:\_aiVision\20_Anomalib\results\Patchcore\MVTecAD\hazelnut\v11\weights\lightning\model.ckpt" ^
+  --export_type onnx ^
+  --export_root ".\exports\onnx_default" ^
+  --model_file_name "patchcore_hazelnut_opv11" ^
+  --onnx_kwargs.opset_version 11
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe ".\exports\onnx_default\weights\onnx\patchcore_hazelnut_opv11.onnx" ^
+  --output_model ".\exports\fh_ir\patchcore_hazelnut_opv11.xml" ^
+  --input "[1,3,256,256]"
+
+
+1. downsize image, from 1024by1024 to 640by640
+2. increase datasets, copypaste to get >300
+3. use padim
+4. workers 1 bc only 1 gpu
+
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\train\good" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\hazelnut_640_stretch" ^
+  --width 640 --height 640 --mode stretch ^
+  --copy_non_images
+
+
+
+:: test/good
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\good" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_good_640" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+:: If you have defective subclasses under test (e.g., crack, hole, etc.), run one per folder:
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\crack" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_crack_640" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\cut" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_cut_640" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\hole" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_hole_640" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test\print" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_print_640" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+
+:: Make target layout
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\train\good"
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\good"
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\crack"
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\cut"
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\hole"
+mkdir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\print"
+
+:: Copy in the resized sets
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\hazelnut_640_stretch" ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\train\good" *.* /E
+
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_good_640"  ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\good" *.* /E
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_crack_640" ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\crack" *.* /E
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_cut_640"   ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\cut" *.* /E
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_hole_640"  ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\hole" *.* /E
+robocopy "C:\_aiVision\20_Anomalib\datasets\hazelnut\test_print_640" ^
+         "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\test\print" *.* /E
+
+
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\ground_truth\print" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\ground_truth\print" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\ground_truth\crack" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\ground_truth\crack" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\ground_truth\cut" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\ground_truth\cut" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+python resize_dataset.py ^
+  --input_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut\ground_truth\hole" ^
+  --output_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\ground_truth\hole" ^
+  --width 640 --height 640 --mode stretch --copy_non_images
+
+
+
+anomalib train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision bf16 ^
+  --data.num_workers 1
+
+
+".venv311\Scripts\anomalib.exe" export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTecAD ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path "C:\_aiVision\20_Anomalib\results\Patchcore\MVTecAD\hazelnut_640\v1\weights\lightning\model.ckpt" ^
+  --export_type onnx ^
+  --export_root ".\exports\onnx_default" ^
+  --model_file_name "patchcore_hazelnut_640v1" ^
+  --onnx_kwargs.opset_version 11
+
+C:\_aiVision\20_Anomalib\.venv-ov\Scripts\ovc.exe ".\exports\onnx_default\weights\onnx\patchcore_hazelnut_640v1.onnx" ^
+  --output_model ".\exports\fh_ir\patchcore_hazelnut_640v1.xml" ^
+  --input "[1,3,256,256]"
+
+python quantize_to_int8.py ^
+  --xml ".\exports\fh_ir\patchcore_hazelnut_256_fp16.xml" ^
+  --out_xml ".\exports\fh_ir\patchcore_hazelnut_256_int8.xml" ^
+  --calib_dir "C:\_aiVision\20_Anomalib\datasets\hazelnut_640\train\good" ^
+  --limit 400 ^
+  --input_size 256 256
+
+NNCF ver diff, downgrade to 
+
+Use Anomalib 1.x:
+
+:: from C:\_aiVision\20_Anomalib
+py -3.11 -m venv .venv-v1
+.\.venv-v1\Scripts\activate
+python -m pip install -U pip
+
+:: PyTorch with CUDA 12.8 (let pip resolve latest 2.8/0.23/2.8 within cu128)
+pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cu128 ^
+  "torch==2.8.*+cu128" "torchvision==0.23.*+cu128" "torchaudio==2.8.*+cu128"
+
+:: Core libs that play nicely with your stack
+pip install --no-cache-dir "numpy>=2.0,<2.3" "opencv-python-headless>=4.10.0.84"
+
+:: Install anomalib v1.x (not v2)
+pip install --no-cache-dir "anomalib==1.*"
+
+
+python - <<^PY
+import torch, torchvision, anomalib, numpy, cv2
+print("torch", torch.__version__, "cuda", torch.version.cuda, "avail", torch.cuda.is_available())
+print("torchvision", torchvision.__version__)
+print("anomalib", anomalib.__version__)
+print("numpy", numpy.__version__, "cv2", cv2.__version__)
+PY
+
+
+:: clean any partial torch installs first (optional but helps)
+pip uninstall -y torch torchvision torchaudio
+
+:: install cu128 builds (exact versions that exist)
+pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cu128 ^
+  torch==2.8.0+cu128 torchvision==0.23.0+cu128 torchaudio==2.8.0+cu128
+
+pip install --no-cache-dir ^
+  tqdm ^
+  pytorch-lightning==2.4.* ^
+  timm==0.9.12 ^
+  einops>=0.7.0 ^
+  scikit-learn>=1.2 ^
+  scikit-image>=0.21 ^
+  pandas>=1.5 ^
+  matplotlib>=3.4.3 ^
+  pillow
+
+
+pip install --no-cache-dir "lightning==2.4.*" "torchmetrics>=1.4,<2"
+
+pip install --no-cache-dir "imgaug==0.4.0" "torchmetrics>=1.4,<2"
+
+
+pip uninstall -y numpy opencv-python opencv-python-headless
+
+pip install --no-cache-dir ^
+  "numpy==1.26.4" ^
+  "opencv-python-headless==4.9.0.80"
+
+pip install --no-cache-dir "kornia>=0.7.2,<0.8"
+
+
+pip install --no-cache-dir "FrEIA>=0.2,<0.4"
+
+
+pip install --no-cache-dir python-dotenv openai huggingface_hub
+
+
+pip install --no-cache-dir ^
+  "open-clip-torch==2.24.0" ^
+  ftfy regex sentencepiece
+
+pip install --no-cache-dir "matplotlib<3.9"
+:: optional but tidy on headless/servers:
+set MPLBACKEND=Agg
+
+
+anomalib train ^
+  --model Patchcore ^
+  --data anomalib.data.MVTec ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 32 ^
+  --data.num_workers 2
+
+
+pip install --no-cache-dir onnx==1.16.2
+
+pip install --no-cache-dir onnxruntime
+
+anomalib export ^
+  --model Patchcore ^
+  --data anomalib.data.MVTec ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --ckpt_path "C:\_aiVision\20_Anomalib\results\Patchcore\MVTec\hazelnut_640\v2\weights\lightning\model.ckpt" ^
+  --export_type onnx ^
+  --export_root ".\exports\onnx_v1" ^
+  --input_size="[256,256]" ^
+  --transform torchvision.transforms.v2.Identity
+
+pip install --upgrade openvino-dev
+
+where ovc
+where mo
+
+ovc ".\exports\onnx_v1\weights\onnx\model.onnx" ^
+  --output_model ".\exports\openvino_v2\weights\ir\model_static.xml" ^
+  --input "input[1,3,256,256]"
+
+
+
+added ratio sampling:
+
+anomalib train ^
+  --model Patchcore ^
+  --model.coreset_sampling_ratio 0.01 ^
+  --data anomalib.data.MVTec ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 32 ^
+  --data.num_workers 2
+
+
+defined model backbone resnet18: 
+anomalib train ^
+  --model Patchcore ^
+  --model.backbone resnet18 ^
+  --model.coreset_sampling_ratio 0.01 ^
+  --data anomalib.data.MVTec ^
+  --data.category hazelnut_640 ^
+  --data.root "C:\_aiVision\20_Anomalib\datasets" ^
+  --trainer.max_epochs 50 ^
+  --trainer.accelerator gpu --trainer.devices 1 ^
+  --trainer.precision 32 ^
+  --data.num_workers 2
+
+
+try FAISS

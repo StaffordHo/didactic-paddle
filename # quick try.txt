@@ -1,0 +1,29 @@
+# quick try
+python -u zxingcli.py 1.png 2.png --time 14 --workers 8 --debug warps
+
+# if 2.png still shows 0 candidates, widen search:
+python -u zxingcli.py 2.png --no-topcenter-bias --expected-frac 0 --time 16 --workers 8 --debug warps
+
+
+
+
+# Classical locator + expected size hint + debug outputs
+python yolodecode.py 1.png --locate --roi 160 60 340 170 --dpm \
+  --exp-frac 0.40 --topk 12 --save-warps warps_1 --save-debug debug_1 --time 22
+
+python yolodecode.py 2.png --locate --roi 160 60 340 170 --dpm \
+  --exp-frac 0.40 --topk 12 --save-warps warps_2 --save-debug debug_2 --time 22
+
+# Whole-frame quick try (no locator)
+python yolodecode.py 1.png 2.png --dpm
+
+# With a YOLO detector when you have weights:
+python yolodecode.py 1.png 2.png --weights best.pt --dpm --save-warps warps_yolo
+
+python3 yolodecode.py 1.png --dpm --roi 160 60 340 170 \
+  --exp-frac 0.40 --topk 12 --scan --scan-topk 24 \
+  --save-warps warps_1 --save-debug debug_1 --time 22
+
+python3 yolodecode.py 2.png --dpm --roi 160 60 340 170 \
+  --exp-frac 0.40 --topk 12 --scan --scan-topk 24 \
+  --save-warps warps_2 --save-debug debug_2 --time 22
